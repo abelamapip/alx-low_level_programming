@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *it prints
+ *main - it prints the given value
+ *return: exit code
  */
 int main(void)
 {
