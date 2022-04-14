@@ -6,8 +6,9 @@
 int main(void)
 {
 char a[8] = "_putchar";
-for (int b = 0 ; b < 8; b++)
-putchar(a[b]);
+int b = 0;
+while (b < 8)
+putchar(a[b++]);
 putchar(10);
 return (0);
 }
