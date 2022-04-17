@@ -1,21 +1,32 @@
-#include <stdio.h>
 #include "main.h"
-/**
- *_putchar - print char
- */
-void _putchar(int d)
-{
-putchar(d);
-}
+#include <unistd.h>
 
 /**
- * main - check the code for Holberton School students.
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+/**
+ * main - check the code.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-  _putchar(65);
-  _putchar(10);
-return (0);
+    int r;
+
+    r = _islower('H');
+    _putchar(r + '0');
+    r = _islower('o');
+    _putchar(r + '0');
+    r = _islower(108);
+    _putchar(r + '0');
+    _putchar('\n');
+    return (0);
 }
