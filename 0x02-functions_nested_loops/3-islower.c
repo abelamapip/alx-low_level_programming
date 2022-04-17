@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include "main.h"
+#include <unistd.h>
 /**
  *_putchar - print char
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-void _putchar(int d)
+int _putchar(char c)
 {
-putchar(d);
+return (write(1, &c, 1));
 }
-
 /**
  *_islower - checks for llowercase
  *Return: 1 for lowercase 0 for otherwise
