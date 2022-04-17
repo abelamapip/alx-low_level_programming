@@ -10,3 +10,10 @@ return (1);
 else
 return (0);
 }
+/**
+ *_putchar - print char
+ */
+void _putchar(int d)
+{
+putchar(d);
+}
