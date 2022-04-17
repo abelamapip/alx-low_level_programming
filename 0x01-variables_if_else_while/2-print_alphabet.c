@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-for (int a = 97; a < 123 ; a++)
+int a;
+for (a = 97; a < 123 ; a++)
 putchar(a);
 putchar(10);
 return (0);
