@@ -8,7 +8,7 @@ int main(void)
 int a, b, c;
 for (a = 48; a < 56 ; a++)
 for (b = a + 1; b < 57 ; b++)
-for (c = a + 2; c < 58 ; c++)
+for (c = b + 1; c < 58 ; c++)
 {
 putchar(a);
 putchar(b);
