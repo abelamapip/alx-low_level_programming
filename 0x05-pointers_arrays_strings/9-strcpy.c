@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 /**
  *_strcpy - copy string
@@ -6,12 +7,10 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-while (*src)
-{
-*dest = *src;
-src++;
-dest++;
-}
-*dest = '\0';
+int i, n = strlen(src);
+for (i = 0; i < n && src[i] != '\0'; i++)
+dest[i] = src[i];
+for ( ; i < n; i++)
+dest[i] = '\0';
 return (dest);
 }
