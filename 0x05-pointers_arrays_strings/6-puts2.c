@@ -9,7 +9,7 @@ void puts2(char *str)
 {
 int a = strlen(str), b = 0;
 for (; b < a; b++)
-if(b % 2 == 0)
+if (b % 2 == 0)
 printf("%c", str[b]);
 printf("\n");
 }
