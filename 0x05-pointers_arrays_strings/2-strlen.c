@@ -10,9 +10,9 @@ int a = 0;
 while (1)
 {
 if (*(s + a) != 0)
-a++;    
+a++;
 else
-   break;
+break;
 }
 return (a);
 }
