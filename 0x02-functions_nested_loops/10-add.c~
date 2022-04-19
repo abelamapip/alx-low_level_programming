@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ *add - adds to ints
+ *@a: int a
+ *@b: int b
+ */
+int add(int a, int b)
+{
+return (a + b);
+}
